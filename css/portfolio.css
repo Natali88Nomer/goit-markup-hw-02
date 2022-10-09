@@ -1,33 +1,47 @@
-body {
-  font-family: Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
-    sans-serif;
+body{
+  font-family: "Raleway", Oleo Script;
+  font-family: "Roboto";
+}
+.logo {
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19px;
+  letter-spacing: 0.03em;
+  text-decoration: initial;
+  color: black;
 }
 .look {
   list-style: none;
 }
 .logo-web {
-  color: blue;
+  font-family: 'Raleway', Oleo Script;
+  color: #2196f3;
+}
+.tel-text {
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: initial;
+  color: #757575;
 }
 
+.button-header,
 .header-button {
-  font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: initial;
   cursor: pointer;
-  color: black;
   color: #212121;
 }
 
 .header-button:hover,
 .header-button:focus {
-  color: blue;
-
-  
+  color: #2196f3;
 }
 
 .btn {
+  font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -38,12 +52,10 @@ body {
   color: #212121;
 }
 
-
 .btn:hover,
 .btn:focus {
   color: white;
-  background-color: blue;
- 
+  background: #2196f3;
 }
 .container {
 }
@@ -58,7 +70,7 @@ body {
   line-height: 2;
 
   letter-spacing: 0.06em;
-
+  text-decoration: initial;
   color: #212121;
 }
 .job {
@@ -67,8 +79,11 @@ body {
   line-height: 1.87;
 
   letter-spacing: 0.03em;
-
+  text-decoration: initial;
   color: #757575;
+}
+.link {
+  text-decoration: initial;
 }
 
 .dark {
@@ -85,10 +100,17 @@ body {
 }
 
 .footer-button {
+  font-family: "Roboto";
+  font-style: normal;
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
   text-decoration: initial;
   cursor: pointer;
+}
+
+.footer-button:hover,
+.footer-button:focus {
+  color: #ffffff;
 }

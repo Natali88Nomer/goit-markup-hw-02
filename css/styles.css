@@ -1,35 +1,79 @@
-body {
-  font-family: Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
-    sans-serif;
+.body {
+  font-family: Roboto, sans-serif;
 }
+
+:root {
+  --sect-text-color: #ffffff;
+  --block-title-color: #303030;
+}
+
 .logo-web {
+  font-family: "Raleway";
   color: blue;
 }
-.header-button {
+
+.tel-text {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  color: #757575;
+  color: #757575;
+  text-decoration: initial;
+}
+.logo {
+  font-family: "Raleway", Oleo Script;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
   text-decoration: initial;
-  cursor: pointer;
-  color: black;
+  color: #212121;
 }
-.header-button:hover, .header-button:focus {
+.button-header,
+.header-button {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: initial;
+  cursor: pointer;
+  color: #212121;
+}
+
+.header-button:hover,
+.header-button:focus {
   color: #2196f3;
+}
+.button:hover,
+.button:focus {
+  background: #2196f3;
+  color: blue;
+}
+.visually-hidden {
+  visibility: hidden;
+}
+.header {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  text-decoration: initial;
+  color: #212121;
 }
 
 .sect-text {
-  font-weight: 900;
+  font-weight: 500;
   font-size: 44px;
   line-height: 1.36;
-
-  text-align: center;
   letter-spacing: 0.06em;
-  text-transform: uppercase;
 
-  color: #ffffff;
+  color: var(--sect-text-color);
 }
 .fon {
+  font-family: "Roboto", sans-serif;
+  color: #ffffff;
   background: #2f303a;
 }
 
@@ -38,9 +82,10 @@ body {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   cursor: pointer;
+  color: #ffffff;
 }
 
-.li {
+.features {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -75,20 +120,21 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
 
-  color: #212121;
+  color: var(--block-color-title);
 }
 
 .myteam {
   background: #f5f4fa;
 }
 
-.li-images {
-}
-
 .images {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+}
+.myteam-images {
+  width: 270px;
+  height: 260px;
 }
 
 .work {
@@ -106,9 +152,10 @@ body {
 }
 
 .dark {
-  background: #000000;
+  background: #2f303a;
 }
 .logo-footer {
+  font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
@@ -118,10 +165,16 @@ body {
 }
 
 .footer-button {
+  font-family: "Roboto";
+  font-style: normal;
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
   text-decoration: initial;
   cursor: pointer;
+}
+.footer-button:focus,
+.footer-button:hover {
+  color: #ffffff;
 }
