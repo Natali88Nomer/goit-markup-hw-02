@@ -15,7 +15,6 @@ body {
   --tell-text-color: #757575;
   --current-color: #2196f3;
   --hover-header-button-index: #188ce8;
-  --hover-header-button-portf: #2196f3;
   --btn-portf: #212121;
   --hover-btn: #2196f3;
   --button-hover-index: #188ceb;
@@ -267,17 +266,6 @@ img {
 }
 /*------- Portfolio-------*/
 
-.button-header-portf,
-.header-button-portf {
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  text-decoration: initial;
-  cursor: pointer;
-  color: var(--button-header-portf);
-}
-.header-button-portf:hover,
-.header-button-portf:focus,
 .tel-text:hover,
 .tel-text:focus {
   color: var(--hover-header-button-portf);
