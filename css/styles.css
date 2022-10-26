@@ -1,15 +1,84 @@
-.body {
+body {
   font-family: Roboto, sans-serif;
+  color: var(--sect-text-color);
+  background: var(--sect-text-color);
 }
 
 :root {
   --sect-text-color: #ffffff;
-  --block-title-color: #303030;
+  --logo-one-text-color: #2196f3;
+  --block-color-title: #2f303a;
+  --logo-two-color: #212121;
+  --header-button-color: #212121;
+  --header-fon-index: #2f303a;
+  --myteam-color-index: #f5f4fa;
+  --tell-text-color: #757575;
+  --current-color: #2196f3;
+  --hover-header-button-index: #188ce8;
+  --hover-header-button-portf: #2196f3;
+  --btn-portf: #212121;
+  --hover-btn: #2196f3;
+  --button-hover-index: #188ceb;
+  --button-index: #2196f3;
+  --button-header-portf: #212121;
+  --name-job-portf: #212121;
+  --job-portf: #757575;
+  --features-text: #212121;
+  --footer-fon-dark: #2f303a;
+  --work-portf: #757575;
+  --name-portf: #212121;
+  --text-about-index: #757575;
 }
 
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+ul,
+ol {
+  margin: 0;
+  padding-left: 0;
+}
+button {
+  cursor: pointer;
+}
+address {
+  font-style: normal;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+/*---------HEADER index----------*/
 .logo-web {
-  font-family: "Raleway";
-  color: blue;
+  color: var(--logo-one-text-color);
+}
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+  outline: 2px solid red;
 }
 
 .tel-text {
@@ -18,18 +87,35 @@
   line-height: 1.14;
   letter-spacing: 0.02em;
 
-  color: #757575;
-  color: #757575;
+  color: var(--tell-text-color);
+
   text-decoration: initial;
 }
 .logo {
-  font-family: "Raleway", Oleo Script;
+  font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
   text-decoration: initial;
-  color: #212121;
+  color: var(--logo-two-color);
+}
+.look {
+  list-style: none;
+}
+.header {
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
+
+.current {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: initial;
+  cursor: pointer;
+  color: var(--current-color);
 }
 .button-header,
 .header-button {
@@ -39,28 +125,27 @@
   letter-spacing: 0.02em;
   text-decoration: initial;
   cursor: pointer;
-  color: #212121;
+  color: var(--header-button-color);
 }
 
 .header-button:hover,
-.header-button:focus {
-  color: #2196f3;
+.header-button:focus,
+.tel-text:hover,
+.tel-text:focus {
+  color: var(--hover-header-button-index);
 }
-.button:hover,
-.button:focus {
-  background: #2196f3;
-  color: blue;
+
+.about {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
-.visually-hidden {
-  visibility: hidden;
-}
-.header {
-  font-weight: 500;
+.text {
   font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.02em;
-  text-decoration: initial;
-  color: #212121;
+  line-height: 1.7;
+
+  letter-spacing: 0.03em;
+
+  color: var(--text-about-index);
 }
 
 .sect-text {
@@ -68,42 +153,52 @@
   font-size: 44px;
   line-height: 1.36;
   letter-spacing: 0.06em;
-
   color: var(--sect-text-color);
 }
 .fon {
   font-family: "Roboto", sans-serif;
-  color: #ffffff;
-  background: #2f303a;
+  color: var(--sect-text-color);
+  background: var(--header-fon-index);
 }
-
+.title-fon {
+  padding-top: 200px;
+  padding-bottom: 200px;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
 .button {
-  background: #2196f3;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  font-family: inherit;
+  background: var(--button-index);
   border-radius: 4px;
   cursor: pointer;
-  color: #ffffff;
+  border: 1px solid var(--button-index);
+  color: var(--sect-text-color);
+  margin: 0 auto;
+  display: block;
 }
-
+.button:hover,
+.button:focus {
+  background-color: var(--button-hover-index);
+}
+.what-do-we-do {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 .features {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-
-  color: #212121;
+  margin-bottom: 10px;
+  color: var(--features-text);
 }
 
-.text {
-  font-size: 14px;
-  line-height: 1.7;
-
-  letter-spacing: 0.03em;
-
-  color: #757575;
+.info-text {
+  margin-bottom: 10px;
 }
-
 .look {
   list-style: none;
 }
@@ -114,17 +209,37 @@
 .command {
   font-weight: 300;
 }
-.title {
+.title-name {
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
+  padding-bottom: 50px;
 
   color: var(--block-color-title);
 }
 
 .myteam {
-  background: #f5f4fa;
+  background: var(--myteam-color-index);
+}
+.myteam-command {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.thesis-name {
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+.thesis-prof {
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+.link {
+  text-decoration: initial;
+}
+
+.dark {
+  background: var(--footer-fon-dark);
 }
 
 .images {
@@ -138,11 +253,11 @@
 }
 
 .work {
-  color: #757575;
+  color: var(--work-portf);
 }
 .name {
   font-weight: 500;
-  color: #212121;
+  color: var(--name-portf);
 }
 .thesis {
   font-size: 16px;
@@ -150,31 +265,111 @@
   text-align: center;
   letter-spacing: 0.03em;
 }
+/*------- Portfolio-------*/
 
-.dark {
-  background: #2f303a;
+.button-header-portf,
+.header-button-portf {
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: initial;
+  cursor: pointer;
+  color: var(--button-header-portf);
 }
+.header-button-portf:hover,
+.header-button-portf:focus,
+.tel-text:hover,
+.tel-text:focus {
+  color: var(--hover-header-button-portf);
+}
+.btn {
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+  text-decoration: initial;
+  cursor: pointer;
+  color: var(--btn-portf);
+}
+
+.btn:hover,
+.btn:focus {
+  color: var(--sect-text-color);
+  background: var(--hover-btn);
+}
+
+.name-job {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+
+  letter-spacing: 0.06em;
+  text-decoration: initial;
+  color: var(--name-job-portf);
+}
+.job {
+  font-size: 16px;
+  line-height: 1.87;
+
+  letter-spacing: 0.03em;
+  text-decoration: initial;
+  color: var(--job-portf);
+}
+
+/*------------Footer-----------*/
+
+.map {
+  color: var(--sect-text-color);
+}
+.not-light {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-contact {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.footer-contakt-logo {
+  margin-top: 60px;
+  margin-bottom: 20px;
+}
+
+.footer-contakt-map {
+  margin-top: 20px;
+  margin-bottom: 9px;
+}
+
+.footer-contact-mail {
+  margin-bottom: 9px;
+}
+.footer-contact-tel {
+  margin-bottom: 9px;
+  margin-bottom: 60px;
+}
+
 .logo-footer {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  color: white;
+  color: var(--sect-text-color);
   text-decoration: initial;
+  padding-top: 60px;
+  padding-bottom: 161px;
 }
 
 .footer-button {
-  font-family: "Roboto";
   font-style: normal;
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6);
   text-decoration: initial;
   cursor: pointer;
 }
-.footer-button:focus,
-.footer-button:hover {
-  color: #ffffff;
+.not-light:focus,
+.not-light:hover {
+  color: var(--sect-text-color);
 }
