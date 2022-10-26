@@ -266,10 +266,6 @@ img {
 }
 /*------- Portfolio-------*/
 
-.tel-text:hover,
-.tel-text:focus {
-  color: var(--hover-header-button-portf);
-}
 .btn {
   font-family: inherit;
   font-style: normal;
