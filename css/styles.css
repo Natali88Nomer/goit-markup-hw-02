@@ -16,6 +16,7 @@ body {
   --current-color: #2196f3;
   --hover-header-button-index: #188ce8;
   --btn-portf: #212121;
+  --btn-backgr-prof: #F5F4FA;
   --hover-btn: #2196f3;
   --button-hover-index: #188ceb;
   --button-index: #2196f3;
@@ -27,6 +28,7 @@ body {
   --work-portf: #757575;
   --name-portf: #212121;
   --text-about-index: #757575;
+
 }
 
 p,
@@ -122,8 +124,8 @@ img {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  text-decoration: initial;
-  cursor: pointer;
+  text-decoration:none;
+  
   color: var(--header-button-color);
 }
 
@@ -172,10 +174,10 @@ img {
   background: var(--button-index);
   border-radius: 4px;
   cursor: pointer;
-  border: 1px solid var(--button-index);
+  border-color:  transparent 1px solid var(--button-index);
   color: var(--sect-text-color);
   margin: 0 auto;
-  display: block;
+  
 }
 .button:hover,
 .button:focus {
@@ -245,6 +247,7 @@ img {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+  background:var(--sect-text-color)
 }
 .myteam-images {
   width: 270px;
@@ -252,10 +255,20 @@ img {
 }
 
 .work {
+  font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height:1.18;
+letter-spacing: 0.03em;
   color: var(--work-portf);
 }
 .name {
-  font-weight: 500;
+  font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height:1.18;
+
+letter-spacing: 0.03em;
   color: var(--name-portf);
 }
 .thesis {
@@ -276,6 +289,7 @@ img {
   text-decoration: initial;
   cursor: pointer;
   color: var(--btn-portf);
+  background: #F5F4FA;
 }
 
 .btn:hover,
@@ -340,9 +354,9 @@ img {
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--sect-text-color);
-  text-decoration: initial;
+  text-decoration:none;
   padding-top: 60px;
-  padding-bottom: 161px;
+
 }
 
 .footer-button {
@@ -350,10 +364,13 @@ img {
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
-  text-decoration: initial;
+  text-decoration:none;
   cursor: pointer;
 }
 .not-light:focus,
-.not-light:hover {
-  color: var(--sect-text-color);
+.not-light:hover,
+.map:focus,
+.map:hover
+{
+  color: var(--button-index);
 }
