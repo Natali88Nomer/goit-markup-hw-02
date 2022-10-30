@@ -5,30 +5,13 @@ body {
 }
 
 :root {
+  --logo-btn-cur: #2196f3;
   --sect-text-color: #ffffff;
-  --logo-one-text-color: #2196f3;
-  --block-color-title: #2f303a;
-  --logo-two-color: #212121;
-  --header-button-color: #212121;
-  --header-fon-index: #2f303a;
-  --myteam-color-index: #f5f4fa;
-  --tell-text-color: #757575;
-  --current-color: #2196f3;
-  --hover-header-button-index: #188ce8;
-  --btn-portf: #212121;
-  --btn-backgr-prof: #F5F4FA;
-  --hover-btn: #2196f3;
-  --button-hover-index: #188ceb;
-  --button-index: #2196f3;
-  --button-header-portf: #212121;
-  --name-job-portf: #212121;
-  --job-portf: #757575;
-  --features-text: #212121;
-  --footer-fon-dark: #2f303a;
-  --work-portf: #757575;
-  --name-portf: #212121;
-  --text-about-index: #757575;
-
+  --logotwo-but-name-job-features: #212121;
+  --header-footer-index: #2f303a;
+  --myteam-btnbg: #f5f4fa;
+  --teltext-btnhov-job-work-about: #757575;
+  --hover-header-button:#188ce8;
 }
 
 p,
@@ -72,7 +55,7 @@ img {
 
 /*---------HEADER index----------*/
 .logo-web {
-  color: var(--logo-one-text-color);
+  color: var(--logo-btn-cur);
 }
 .container {
   width: 1200px;
@@ -88,7 +71,7 @@ img {
   line-height: 1.14;
   letter-spacing: 0.02em;
 
-  color: var(--tell-text-color);
+  color: var(--teltext-btnhov-job-work-about);
 
   text-decoration: initial;
 }
@@ -99,7 +82,7 @@ img {
   line-height: 1.19;
   letter-spacing: 0.03em;
   text-decoration: initial;
-  color: var(--logo-two-color);
+  color: var(--logotwo-but-name-job-features);
 }
 .look {
   list-style: none;
@@ -116,7 +99,7 @@ img {
   letter-spacing: 0.02em;
   text-decoration: initial;
   cursor: pointer;
-  color: var(--current-color);
+  color: var(--logo-btn-cur);
 }
 .button-header,
 .header-button {
@@ -124,16 +107,16 @@ img {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  text-decoration:none;
-  
-  color: var(--header-button-color);
+  text-decoration: none;
+
+  color: var(--logotwo-but-name-job-features);
 }
 
 .header-button:hover,
 .header-button:focus,
 .tel-text:hover,
 .tel-text:focus {
-  color: var(--hover-header-button-index);
+  color: var(--hover-header-button);
 }
 
 .about {
@@ -143,10 +126,8 @@ img {
 .text {
   font-size: 14px;
   line-height: 1.7;
-
   letter-spacing: 0.03em;
-
-  color: var(--text-about-index);
+  color: var(--teltext-btnhov-job-work-about);
 }
 
 .sect-text {
@@ -154,12 +135,13 @@ img {
   font-size: 44px;
   line-height: 1.36;
   letter-spacing: 0.06em;
+  text-transform: uppercase;
   color: var(--sect-text-color);
 }
 .fon {
   font-family: "Roboto", sans-serif;
   color: var(--sect-text-color);
-  background: var(--header-fon-index);
+  background: var(--header-footer-index);
 }
 .title-fon {
   padding-top: 200px;
@@ -171,17 +153,20 @@ img {
 }
 .button {
   font-family: inherit;
-  background: var(--button-index);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.8;
+  letter-spacing: 0.06em;
+  background: var(--logo-btn-cur);
   border-radius: 4px;
   cursor: pointer;
-  border-color:  transparent 1px solid var(--button-index);
+  border-color: transparent;
   color: var(--sect-text-color);
   margin: 0 auto;
-  
 }
 .button:hover,
 .button:focus {
-  background-color: var(--button-hover-index);
+  background-color: var(--hover-header-button);
 }
 .what-do-we-do {
   padding-top: 94px;
@@ -194,7 +179,7 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   margin-bottom: 10px;
-  color: var(--features-text);
+  color: var(--logotwo-but-name-job-features);
 }
 
 .info-text {
@@ -217,11 +202,11 @@ img {
   letter-spacing: 0.03em;
   padding-bottom: 50px;
 
-  color: var(--block-color-title);
+  color: var(--header-footer-index);
 }
 
 .myteam {
-  background: var(--myteam-color-index);
+  background: var(--myteam-btnbg);
 }
 .myteam-command {
   padding-top: 94px;
@@ -240,14 +225,14 @@ img {
 }
 
 .dark {
-  background: var(--footer-fon-dark);
+  background: var(--header-footer-index);
 }
 
 .images {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-  background:var(--sect-text-color)
+  background: var(--sect-text-color);
 }
 .myteam-images {
   width: 270px;
@@ -256,20 +241,20 @@ img {
 
 .work {
   font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height:1.18;
-letter-spacing: 0.03em;
-  color: var(--work-portf);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
+  color: var(--teltext-btnhov-job-work-about);
 }
 .name {
   font-style: normal;
-font-weight: 500;
-font-size: 16px;
-line-height:1.18;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
 
-letter-spacing: 0.03em;
-  color: var(--name-portf);
+  letter-spacing: 0.03em;
+  color: var(--logotwo-but-name-job-features);
 }
 .thesis {
   font-size: 16px;
@@ -288,32 +273,28 @@ letter-spacing: 0.03em;
   letter-spacing: 0.03em;
   text-decoration: initial;
   cursor: pointer;
-  color: var(--btn-portf);
-  background: #F5F4FA;
+  color: var(--logotwo-but-name-job-features);
+  background: var(--myteam-btnbg);
 }
-
 .btn:hover,
 .btn:focus {
   color: var(--sect-text-color);
-  background: var(--hover-btn);
+  background: var(--logo-btn-cur);
 }
-
 .name-job {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
 
   letter-spacing: 0.06em;
-  text-decoration: initial;
-  color: var(--name-job-portf);
+  color: var(--logotwo-but-name-job-features);
 }
 .job {
   font-size: 16px;
   line-height: 1.87;
-
   letter-spacing: 0.03em;
   text-decoration: initial;
-  color: var(--job-portf);
+  color: var(--teltext-btnhov-job-work-about);
 }
 
 /*------------Footer-----------*/
@@ -322,7 +303,7 @@ letter-spacing: 0.03em;
   color: var(--sect-text-color);
 }
 .not-light {
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--teltext-btnhov-job-work-about);
 }
 
 .footer-contact {
@@ -354,9 +335,8 @@ letter-spacing: 0.03em;
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--sect-text-color);
-  text-decoration:none;
+  text-decoration: none;
   padding-top: 60px;
-
 }
 
 .footer-button {
@@ -364,13 +344,12 @@ letter-spacing: 0.03em;
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
-  text-decoration:none;
+  text-decoration: none;
   cursor: pointer;
 }
 .not-light:focus,
 .not-light:hover,
 .map:focus,
-.map:hover
-{
-  color: var(--button-index);
+.map:hover {
+  color: var(--logo-btn-cur);
 }
